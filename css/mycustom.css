@@ -1,0 +1,198 @@
+/* PART-1 CSS */
+
+/* PART-2 CSS */
+.bg-part-2{
+    background-image: url('../images/bg-body.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.mirror img{
+    position: absolute;
+    right: 0px;
+    width: 25%;
+    top: 500px;
+    
+}
+/* 控制 PART-2 六個區塊背景圖片 */
+.btn-bg-1{
+    background-image: url('../images/bg_hot-1.png');
+}
+.btn-bg-2{
+    background-image: url('../images/bg_hot-2.png');
+}
+.btn-bg-3{
+    background-image: url('../images/bg_hot-3.png');
+}
+.btn-bg-4{
+    background-image: url('../images/bg_hot-4.png');
+}
+.btn-bg-5{
+    background-image: url('../images/bg_hot-5.png');
+}
+.btn-bg-6{
+    background-image: url('../images/bg_hot-6.png');
+}
+/* PART-3 CSS */
+.button-more{
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 2px 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+    border-radius:5px; 
+  box-shadow: 1px 1px 3px gray;
+    display: inline-block;
+
+}
+.t3 {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 5px solid blue;
+    display:inline-block;
+    margin-left: 3px;
+    }
+
+/* PART-4 CSS */
+/* PART-5 CSS */
+
+
+/* 通用 */
+/* 控制title區塊 */
+.part-2 .bg-title {
+    background-image: url('../images/bg_header.png');
+    background-repeat: repeat-x;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+    border-radius:5px 5px 0px 0px; 
+    margin: 10px 10px 0px 10px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px black;
+}
+.part-3 .bg-title {
+    background-image: url('../images/bg_header.png');
+    background-repeat: repeat-x;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    border-radius:5px 5px 0px 0px; 
+    margin: 10px 10px 0px 10px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px black;
+    display: inline-block;
+}
+
+.pd-updown{
+    padding: 15px 0px;
+
+}
+.bg-white-circle{
+ 
+    position: absolute;
+    left: 0;
+}
+
+/* 控制6個欄位區塊的通用css */
+.frame{
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px 0px;
+       
+}
+.frame-a{
+    margin: 10px 0px 5px 0px;
+}
+.frame-b{
+    margin: 5px 0px 10px 0px;
+
+}
+
+.frame img {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 50px;
+    margin-left: -70px;
+    
+}
+.frame .word{
+    font-weight: bolder;
+    padding-left: 45px;
+    text-shadow: 1px 1px 5px white;
+    height: 94px;
+    
+    
+}
+.container-fluid.box-boder{
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px gray;
+    
+}
+.box-boder{
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px gray;
+    background-color: rgba(255, 255, 255, 0.795);
+    
+}
+
+.box-boder .pd-updown{
+    padding: 10px;
+}
+
+
+.pd-0{
+    padding: 0px;
+}
+
+
+
+/* 媒體查詢，在螢幕解析度下低於_____px，設定該class在該解析度下之變化 */
+@media only screen and (max-width: 1199px){
+
+}
+@media only screen and (max-width: 991px){
+    .bg-title {
+          width: 20%;
+    }
+    .frame img {       
+        margin-left: -105px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .bg-title {
+          width: 30%;
+    }
+    .frame img {       
+        margin-left: -200px;
+    }
+ 
+}
+@media only screen and (max-width: 575px){
+    .frame-a{
+        padding: 5px ;
+    }
+    .frame-b{
+        padding: 5px ;
+        
+    
+    }
+    .frame .word{
+        font-weight: bolder;
+        padding-left: 13px;
+        text-shadow: 1px 1px 5px white;
+        
+    }
+    .bg-title {
+        width: 45%;
+    }
+    .frame img {       
+        margin-left: -30px;
+    }
+}
